@@ -1,2 +1,4 @@
 Try to delete employees Steven Thorpe and Nancy Freehafer from the database.
 Does the delete operation succeed or not and why?
+
+Cannot delete or update a parent row: a foreign key constraint fails (`northwind`.`purchase_orders`, CONSTRAINT `fk_purchase_orders_employees1` FOREIGN KEY (`created_by`) REFERENCES `employees` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
